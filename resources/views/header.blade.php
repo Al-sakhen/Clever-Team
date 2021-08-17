@@ -65,10 +65,10 @@
                     <li class="dropdown"><a href="#"><span>المواد الدراسية</span> <i class="bi bi-chevron-down"></i></a>
 
                     <ul>
-                        <li><a href="{{url('FstYear')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الأولى</a></a></li>
-                        <li><a href="{{url('ScndYear')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الثانية</a></a></li>
-                        <li><a href="{{url('ThrdYear')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الثالثة</a></a></li>
-                        <li><a href="{{url('FrthYear')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الرابعة</a></a></li>
+                        <li><a href="{{url('first-year')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الأولى</a></a></li>
+                        <li><a href="{{url('second-year')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الثانية</a></a></li>
+                        <li><a href="{{url('third-year')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الثالثة</a></a></li>
+                        <li><a href="{{url('fourth-year')}}" class="dropdown-item"><i class="fas fa-angle-left"></i>السنة الرابعة</a></a></li>
                         <li><div class="dropdown-divider"></div></li>
                         <li><a href="" class="dropdown-item"><i class="fas fa-angle-left"></i>المواد المشتركة</a></a></li>
                         </ul>

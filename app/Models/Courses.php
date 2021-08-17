@@ -17,6 +17,7 @@ class Courses extends Model
         'name',
         'description',
         'image',
+        'course_type',
         'year_id',
         "created_at",
         "updated_at",

@@ -29,9 +29,9 @@
                     <th>Name</th>
                     <th>Description</th>
                     <th>Img</th>
+                    <th>Course type</th>
                     <th>Year</th>
                     <th>Methods</th>
-
                     <th>Materials</th>
                 </tr>
                 </thead>
@@ -44,6 +44,7 @@
                     <td>{{$c->name}}</td>
                     <td>{{$c->description}}</td>
                     <td><img class="image-fluid" style="width: 3.5rem" src="{{asset('img/'. $c->image_path)}}" alt="asrfaf"></td>
+                    <td>{{$c->course_type}}</td>
                     <td>{{$c->year_id}}</td>
                     <td><a href="{{url('/dashboard/courses/updatecourse/'. $c->id)}}" ><img style="width: 2.5rem" src="{{asset('assets/img/edit.svg')}}"/></a>
                     <a href={{url('dashboard/delete/'.$c->id) }}><img  style="width: 2.5rem" src="{{asset('assets/img/banned.svg')}}"></a></td>

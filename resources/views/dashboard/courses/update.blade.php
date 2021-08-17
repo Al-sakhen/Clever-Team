@@ -45,16 +45,26 @@
                         <div class="form-group">
                             <label for="inputProjectLeader">Course Img</label>
                             <input type="file" name="image" value="{{asset('img/'.$d->image_path)}}" id="inputProjectLeader" class="form-control">
-                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputStatus">Course type</label>
+                            <select id="inputStatus" name="course_type"  class="form-control custom-select">
+                                <option>university_mandatory</option>
+                                <option>university_optional</option>
+                                <option>college_mandatory</option>
+                                <option>major_mandatory</option>
+                                <option>major_optional</option>
+                                <option>support_materials</option>
+                            </select>
+                        </div>
                         <div class="form-group">
                         <label for="inputStatus">Year</label>
-                        <select id="inputStatus" name="year_id"  class="form-control custom-select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-
-                        </select>
+                            <select id="inputStatus" name="year_id"  class="form-control custom-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
                         </div>
                         <div class="">
                             <input type="submit" value="Update Course" class="btn btn-success float-left">

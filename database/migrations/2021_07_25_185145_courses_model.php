@@ -18,6 +18,7 @@ class CoursesModel extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('image_path');
+            $table->string('course_type');
             $table->unsignedBigInteger('year_id');
             $table->foreign('year_id')->references('id')->on('years');
             $table->timestamps();

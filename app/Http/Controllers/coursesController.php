@@ -43,6 +43,7 @@ class coursesController extends Controller
         $value=$request->validate([
             'name'=>'required',
             'description'=>'required',
+            'course_type'=>'required',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
             'year_id'=>'required',
         ]);
@@ -55,6 +56,7 @@ class coursesController extends Controller
 
         $course->name = $request->name;
         $course->description =$request->description;
+        $course->course_type =$request->course_type;
         $course->image_path = $newImageName;
         $course->year_id = $request->year_id;
         $course->save();
@@ -92,6 +94,7 @@ class coursesController extends Controller
         $request->validate([
             'name'=>'required',
             'description'=>'required',
+            'course_type'=>'required',
             'image'=>'image|mimes:jpeg,png,jpg,gif,svg|max:5048',
             'year_id'=>'required',
         ]);
@@ -99,6 +102,7 @@ class coursesController extends Controller
         $data= Courses::find($request->id);
         $data->name = $request->name;
         $data->description = $request->description;
+        $data->course_type =$request->course_type;
         if($request->image != null){
 
             $newImageName = time(). '-'. 'year'.$request->year_id . '.' . $request->image->extension();

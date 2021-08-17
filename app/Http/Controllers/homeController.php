@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Courses;
 use App\Models\Course_details;
 use Illuminate\Support\Facades\DB;
 
@@ -23,14 +23,16 @@ public function inner_page(){
 
 public function course_details(Request $request){
 
+    $courses = Courses::where('id', '=' , $request->id)->get();
     $details = Course_details::where('course_id', '=' , $request->id)->with('course') ->get();
 
 
-    // foreach($details as $s){
-    // dd($s);
+    // foreach($courses as $s){
+    // dd($s->name);
     // }
 
-    return view('course_details' ,['details'=>$details , 'name'=>'ahmad']);
+
+    return view('course_details' ,['details'=>$details , 'name'=>'ahmad' , 'courses'=>$courses]);
 }
 
 

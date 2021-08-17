@@ -20,12 +20,11 @@ use App\Http\Controllers\detailsController;
 // home controller
 Route::get('/', [homeController::class, 'index']);
 Route::get ('/index', [homeController::class, 'index']);
-Route::get ('/inner', [homeController::class, 'inner_page']);
 Route::get ('/subject/{id}', [homeController::class, 'course_details']);
-Route::get ('/FstYear', [homeController::class, 'FstYear']);
-Route::get ('/ScndYear', [homeController::class, 'ScndYear']);
-Route::get ('/ThrdYear', [homeController::class, 'ThrdYear']);
-Route::get ('/FrthYear', [homeController::class, 'FrthYear']);
+Route::get ('/first-year', [homeController::class, 'FstYear']);
+Route::get ('/second-year', [homeController::class, 'ScndYear']);
+Route::get ('/third-year', [homeController::class, 'ThrdYear']);
+Route::get ('/fourth-year', [homeController::class, 'FrthYear']);
 
 Route::get ('download/{file_path}', [homeController::class, 'download']);
 
