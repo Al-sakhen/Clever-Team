@@ -9,7 +9,7 @@
         <div class="d-flex justify-content-between align-items-center">
         <ol>
             <li><a href="{{url('/index')}}"> الرئيسية </a></li>
-            <li><a href="{{url('inner')}}"> مواد السنة الدراسية الاولى</a></li>
+            <li><a href="{{url('years/'.$year->id)}}"> مواد {{$year->name}}</a></li>
             <li>وصف المادة</li>
         </ol>
         @foreach ($courses as $c)

@@ -20,11 +20,11 @@ use App\Http\Controllers\detailsController;
 // home controller
 Route::get('/', [homeController::class, 'index']);
 Route::get ('/index', [homeController::class, 'index']);
-Route::get ('/subject/{id}', [homeController::class, 'course_details']);
-Route::get ('/first-year', [homeController::class, 'FstYear']);
-Route::get ('/second-year', [homeController::class, 'ScndYear']);
-Route::get ('/third-year', [homeController::class, 'ThrdYear']);
-Route::get ('/fourth-year', [homeController::class, 'FrthYear']);
+
+Route::get ('/years/{id}', [homeController::class, 'Year']);
+
+Route::get ('/subject/{year_id}/{id}', [homeController::class, 'course_details']);
+
 
 Route::get ('download/{file_path}', [homeController::class, 'download']);
 
@@ -61,7 +61,6 @@ Route::post ('/dashboard/courses/updatecourse', [coursesController::class, 'upda
 
 //  -----------------details controller ----------------------
 Route::get ('/dashboard/course/details/{course_id}', [detailsController::class, 'view']);
-
 
 Route::get ('/dashboard/cousrse/add/{course_id}', [detailsController::class, 'insert']);
 Route::post ('/dashboard/courses/postinsert', [detailsController::class, 'postInsert']);

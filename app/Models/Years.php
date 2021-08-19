@@ -10,6 +10,7 @@ class Years extends Model
     use HasFactory;
 
     protected $table = 'years';
+    
     public $timestamps = false;
 
 
@@ -19,7 +20,7 @@ class Years extends Model
     ];
 
 
-    
+
 public function course(){
     return $this->hasMany(Courses::class, 'year_id', 'id');
 }
