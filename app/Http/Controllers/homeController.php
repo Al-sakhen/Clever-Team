@@ -27,7 +27,6 @@ public function Year(Request $request){
 
 
 
-
 public function course_details(Request $request){
 
     $courses = Courses::where('id', '=' , $request->id)->get();
@@ -38,33 +37,7 @@ public function course_details(Request $request){
 
 
 
-
-
-
-
-// public function FstYear(){
-//     $course =DB::table('courses')->where('year_id', '=' , 1) ->get();
-
-//     return view('FstYear', ['course'=>$course]);
-// }
-// public function ScndYear(){
-//     $course =DB::table('courses')->where('year_id', '=' , 2) ->get();
-
-//     return view('ScndYear', ['course'=>$course]);
-// }
-// public function ThrdYear(){
-//     $course =DB::table('courses')->where('year_id', '=' , 3) ->get();
-
-//     return view('ThrdYear', ['course'=>$course]);
-// }
-// public function FrthYear(){
-//     $course =DB::table('courses')->where('year_id', '=' , 4) ->get();
-
-//     return view('FrthYear', ['course'=>$course]);
-// }
-
 public function download(Request $request , $file_path){
-
 
     return response()->download(public_path('files/'.$file_path));
 }

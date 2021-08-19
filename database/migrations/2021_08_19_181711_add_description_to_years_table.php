@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class YearsModel extends Migration
+class AddDescriptionToYearsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class YearsModel extends Migration
      */
     public function up()
     {
-        Schema::create('years', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            
-        });
+        Schema::table('years', function (Blueprint $table) {
+            $table->string('description');
 
-        }
+        });
+    }
 
     /**
      * Reverse the migrations.
@@ -28,7 +26,8 @@ class YearsModel extends Migration
      */
     public function down()
     {
-
+        Schema::table('years', function (Blueprint $table) {
+            $table->dropColumn('description');
+        });
     }
-
 }

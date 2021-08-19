@@ -66,37 +66,16 @@
         </div>
 
         <div class="row">
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="{{url('first-year')}}">السنة الدراسية الأولى</a></h4>
-            <p>لا بد انك تبحث عن بعض المواد التعليمية مثل التفاضل والتكامل ، ومقدمة البرمجة وبعض المواد الأخرى!  </p>
+        @foreach (session()->get('years') as $d)
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="{{url('years/'.$d->id)}}">{{$d->name}}</a></h4>
+                <p>{{$d->description}}</p>
+                </div>
             </div>
-        </div>
+        @endforeach
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="{{url('second-year')}}">السنة الدراسية الثانية</a></h4>
-            <p>لا بد انك تبحث عن تفاضل وتكامل 2 ، والبرمجة لطلبات الكلية العلمية ، والمنطق الرقمي وغيرها!</p>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="{{url('third-year')}}">السنة الدراسية الثالثة</a></h4>
-            <p>لا بد انك تبحث عن البرمجة في لغة جافا ، وبعض المواد المشتركة</p>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4  mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="{{url('fourth-year')}}">السنة الدراسية الرابعة</a></h4>
-            <p>لا بد انك تبحث عن بعض المصادر المساعدة لمشروع التخرج وبعض الدورات التعليمية بالاضافة لآخر المواد الدراسية في الخطة! </p>
-            </div>
-        </div>
         </div>
 
         </div>
