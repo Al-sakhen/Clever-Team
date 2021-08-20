@@ -25,30 +25,28 @@
 
                 <thead >
                     <tr >
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Img</th>
-                    <th>Course type</th>
-                    <th>Year</th>
-                    <th>Methods</th>
-                    <th>Materials</th>
-                </tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Img</th>
+                        <th>Course type</th>
+                        <th>Year</th>
+                        <th>Methods</th>
+                        <th>Materials</th>
+                    </tr>
                 </thead>
                 <tbody>
+
                     @foreach ($course as $c)
-
-
                     <tr>
-                    <td>{{$c->id}}</td>
-                    <td>{{$c->name}}</td>
-                    <td>{{$c->description}}</td>
-                    <td><img class="image-fluid" style="width: 3.5rem" src="{{asset('img/'. $c->image_path)}}" alt="asrfaf"></td>
-                    <td>{{$c->course_type}}</td>
-                    <td>{{$c->year_id}}</td>
-                    <td><a href="{{url('/dashboard/courses/updatecourse/'. $c->id)}}" ><img style="width: 2.5rem" src="{{asset('assets/img/edit.svg')}}"/></a>
-                    <a href={{url('dashboard/delete/'.$c->id) }}><img  style="width: 2.5rem" src="{{asset('assets/img/banned.svg')}}"></a></td>
-                    <td><a href='{{url('/dashboard/cousrse/add/'.$c->id)}}' ><img style="width: 2.5rem" src="{{asset('assets/img/add.svg')}}"/></a> <a href="{{url('/dashboard/course/details/'.$c->id)}}" ><img style="width: 2.5rem" src="{{asset('assets/img/file.svg')}}"/></a></td>
+                        <td>{{$c->id}}</td>
+                        <td>{{$c->name}}</td>
+                        <td class="w-25">{{$c->description}}</td>
+                        <td><img class="image-fluid" style="width: 3.5rem" src="{{asset('img/'. $c->image_path)}}" alt="asrfaf"></td>
+                        <td>{{$c->course_type}}</td>
+                        <td>{{$c->year_id}}</td>
+                        <td><a href="{{url('/dashboard/courses/updatecourse/'. $c->id)}}" ><img style="width: 2.5rem" src="{{asset('assets/img/edit.svg')}}"/></a><a href={{url('dashboard/delete/'.$c->id) }}><img  style="width: 2.5rem" src="{{asset('assets/img/banned.svg')}}"></a></td>
+                        <td><a href='{{url('/dashboard/cousrse/add/'.$c->id)}}' ><img style="width: 2.5rem" src="{{asset('assets/img/add.svg')}}"/></a> <a href="{{url('/dashboard/course/details/'.$c->id)}}" ><img style="width: 2.5rem" src="{{asset('assets/img/file.svg')}}"/></a></td>
 
                     </tr>
 

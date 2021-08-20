@@ -26,9 +26,6 @@ class detailsController extends Controller
         $u = auth()->user();
 
         return view('dashboard.details.view' , ['course_details'=>$course_details , 'title'=>'Course details', 'user'=>$u , 'course_id'=>$course_id ]);
-
-
-
     }
 
     public function insert(Request $request){

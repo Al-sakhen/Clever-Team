@@ -39,8 +39,11 @@ Route::post ('/postlogin', [adminController::class, 'postlogin']);
 Route::get ('/logout', [adminController::class, 'logout']);
 
 //  -----------------year controller ----------------------
-Route::get ('/year', [yearsController::class, 'InsertName']);
-Route::post ('/PostInsertName', [yearsController::class, 'PostInsertName']);
+Route::get ('/dashboard/years', [yearsController::class, 'view'])->middleware('auth')->name('dashboard');
+
+Route::get ('/dashboard/year/updateyear/{id}', [yearsController::class, 'updateYear']);
+Route::post ('/dashboard/year/postupdateyear', [yearsController::class, 'postUpdateYear']);
+
 
 
 

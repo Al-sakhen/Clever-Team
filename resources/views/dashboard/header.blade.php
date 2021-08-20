@@ -106,14 +106,23 @@
             <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
 
+            <li class="nav-item " style="cursor: pointer">
+                    <a href="{{url('dashboard/years')}}" class="nav-link active">
+                        <i class="nav-icon fas fa-edit"></i>
+                        <p>
+                            اعدادات الموقع
+                        </p>
+                    </a>
+            </li>
 
-                <li class="nav-item menu-open">
+
+            <li class="nav-item ">
                     <a class="nav-link active">
-                    <i class="nav-icon fas fa-edit"></i>
-                    <p>
-                        السنوات الدراسية
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
+                        <i class="nav-icon fas fa-edit"></i>
+                        <p>
+                            السنوات الدراسية
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
                     </a>
                     @foreach(session()->get('years') as $d)
                     <ul class="nav nav-treeview float-right ">
@@ -124,10 +133,6 @@
                         </li>
                     </ul>
                     @endforeach
-
-
-<!-- <h1>HI</h1> -->
-
             </li>
 
             </ul>
