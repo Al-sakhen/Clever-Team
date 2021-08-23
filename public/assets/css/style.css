@@ -40,7 +40,8 @@ h6 {
 
 .shadow1 {
     /* background: #91877b; */
-    text-shadow: 6px 3px 5px #1a1c1dd9, 1px -1px 10px rgb(255 255 255 / 30%);
+    text-shadow: -7px 2px 15px rgb(47 48 49 / 25%),
+        1px -1px 10px rgb(205 189 189 / 30%);
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -545,7 +546,7 @@ h6 {
     font-size: 16px;
     transition: 0.5s;
     margin-left: 25px;
-    color: #222222;
+    color: white;
     font-weight: 600;
     display: flex;
     align-items: center;
