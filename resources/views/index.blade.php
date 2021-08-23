@@ -67,7 +67,7 @@
 
         <div class="row">
         @foreach (session()->get('years') as $d)
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4><a href="{{url('years/'.$d->id)}}">{{$d->name}}</a></h4>
