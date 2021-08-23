@@ -16,7 +16,7 @@
                 @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
             <div class="card-header">
-                <h3 class="card-title">Courses</h3>
+                <h3 class="card-title">Materials</h3>
 
 
                 <td><a href="{{url('/dashboard/cousrse/add/'.$course_id)}}" class="btn btn-info float-right">Add new material</a></td>
