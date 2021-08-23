@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,68 +10,68 @@
     <link rel="stylesheet" href="{{asset("innerpage_style.css")}}">
     <link rel="stylesheet" href="{{asset('subject_details.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
-<title>Clever Team</title>
-<meta content="" name="description">
-<meta content="" name="keywords">
+    <title>Clever Team</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-<!-- Favicons -->
-<link href="{{asset('assets/img/favicon.ico')}}" rel="icon">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- Favicons -->
+    <link href="{{asset('assets/img/favicon.ico')}}" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-<!-- Vendor CSS Files -->
-<link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
-<link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-<link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-<link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-<link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-<link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
-<!-- Template Main CSS File -->
-<link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-<link href="{{asset('assets/css/mixitup.css')}}" rel="stylesheet">
-<link href="{{asset('assets/css/nav.css')}}" rel="stylesheet">
-
-
+    <!-- Template Main CSS File -->
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/mixitup.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/nav.css')}}" rel="stylesheet">
 
 
-<!-- ======================================================== -->
+
+
+    <!-- ======================================================== -->
 
 
 </head>
 
 <body>
 
-<!-- ======= Header ======= -->
-<header id="header" class="d-flex align-items-center" >
-    <div class="container d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="{{url('index')}}">كليفير تيم<span>.</span></a></h1>
+            <h1 class="logo"><a href="{{url('index')}}">كليفير تيم<span>.</span></a></h1>
 
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="{{url('index')}}">الرئيسية</a></li>
-                <li><a class="nav-link scrollto" href="#about">من نحن؟</a></li>
-                <li><a class="nav-link scrollto" href=" {{url('index/#services')}}">الخدمات</a></li>
-                <li><a class="nav-link scrollto" href="#team">الفريق</a></li>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="{{url('index')}}">الرئيسية</a></li>
+                    <li><a class="nav-link scrollto" href="#about">من نحن؟</a></li>
+                    <li><a class="nav-link scrollto" href=" {{url('index/#services')}}">الخدمات</a></li>
+                    <li><a class="nav-link scrollto" href="#team">الفريق</a></li>
 
-                <li><a class="nav-link scrollto" href="{{url('index/#contact')}}">تواصل معنا</a></li>
+                    <li><a class="nav-link scrollto" href="{{url('contact_us')}}">تواصل معنا</a></li>
                     <li class="dropdown"><a href="#"><span>المواد الدراسية</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        @foreach (session()->get('years') as $d)
+                        <ul>
+                            @foreach (session()->get('years') as $d)
                             <li><a href="{{url('years/'.$d->id)}}" class="dropdown-item"><i class="fas fa-angle-left"></i>{{$d->name}}</a></li>
-                        @endforeach
-                    </ul>
+                            @endforeach
+                        </ul>
 
                     </li>
-                </li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-    </div>
-</header>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
