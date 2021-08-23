@@ -15,7 +15,7 @@
                 <div class="card card-primary ">
 
                     <div class="card-header">
-                        <h3 class="card-title">Add new course</h3>
+                        <h3 class="card-title">Update the course</h3>
                     </div>
                 <form action="{{url('dashboard/courses/updatecourse')}}" method="POST" enctype="multipart/form-data">
                     @csrf

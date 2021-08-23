@@ -9,7 +9,7 @@
                 <div class="card card-primary ">
 
                     <div class="card-header">
-                        <h3 class="card-title">Add new material</h3>
+                        <h3 class="card-title">Update the material</h3>
                     </div>
                 <form action="{{url('dashboard/material/postupdate')}}" method="POST" enctype="multipart/form-data">
                     @csrf
