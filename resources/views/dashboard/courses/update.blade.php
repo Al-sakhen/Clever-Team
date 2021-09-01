@@ -46,8 +46,10 @@
                             <label for="inputProjectLeader">Course Img</label>
                             <input type="file" name="image" value="{{asset('img/'.$d->image_path)}}" id="inputProjectLeader" class="form-control">
                         </div>
+
                         <div class="form-group">
                             <label for="inputStatus">Course type</label>
+                            <p>{{$d->course_type}}</p>
                             <select id="inputStatus" name="course_type"  class="form-control custom-select">
                                 <option>university_mandatory</option>
                                 <option>university_optional</option>
