@@ -114,8 +114,8 @@ class coursesController extends Controller
         $data->save();
 
 
-
-        return redirect(url('dashboard/FirstYear'));
+        return redirect()->back();
+        // return redirect(url('dashboard/FirstYear'));
     }
 
 
