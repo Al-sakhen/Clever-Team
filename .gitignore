@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/files
+/public/img
 /storage/*.key
 /vendor
 .env
@@ -13,6 +15,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
 
 .fake
 .ionide
