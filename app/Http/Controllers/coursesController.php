@@ -114,6 +114,10 @@ class coursesController extends Controller
         $data->save();
 
 
+        if($data){
+            Alert::toast('تم تعديل الكورس بنجاح ', 'Toast Type');
+
+        }
         return redirect()->back();
         // return redirect(url('dashboard/FirstYear'));
     }

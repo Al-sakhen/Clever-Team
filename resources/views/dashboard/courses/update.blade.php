@@ -68,7 +68,7 @@
                         </div>
                         <div class="">
                             <input type="submit" value="Update Course" class="btn btn-success float-left">
-                            <a href="{{url('dashboard/FirstYear')}}" class="btn btn-secondary float-right">Show Courses</a>
+                            <a href="{{url('/dashboard/' . $d->year_id)}}" class="btn btn-secondary float-right">Show Courses</a>
                             <input type="hidden" name="id" value="{{$d->id}}">
 
                         </div>
