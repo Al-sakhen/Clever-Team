@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Course_details;
+use App\Models\Courses;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert ;
 
@@ -23,9 +24,11 @@ class detailsController extends Controller
         $course_id =$request->course_id;
 
         $course_details =DB::table('course_details')->where('course_id', '=' , $course_id) ->get();
+        $course_name = Courses::where('id', $course_id) ->get();
+        foreach ($course_name as $c)
         $u = auth()->user();
 
-        return view('dashboard.details.view' , ['course_details'=>$course_details , 'title'=>'Course details', 'user'=>$u , 'course_id'=>$course_id ]);
+        return view('dashboard.details.view' , ['course_details'=>$course_details , 'title'=>'Course details', 'user'=>$u , 'course_id'=>$course_id , 'course_name'=>$c->name]);
     }
 
     public function insert(Request $request){

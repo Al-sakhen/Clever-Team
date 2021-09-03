@@ -16,7 +16,7 @@
 
                 <div class="card-header">
                 <h3 class="card-title">Courses</h3>
-                <td><a href="{{url('/dashboard/courses/addcourse')}}" class="btn btn-info float-right">Add new course</a></td>
+                <td><a href="{{url('/dashboard/courses/addcourse')}}" class="btn  btn-outline-info  float-right">Add new course</a></td>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body table-responsive ">

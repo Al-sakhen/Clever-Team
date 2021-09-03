@@ -19,7 +19,7 @@
                 <h3 class="card-title">Materials</h3>
 
 
-                <td><a href="{{url('/dashboard/cousrse/add/'.$course_id)}}" class="btn btn-info float-right">Add new material</a></td>
+                <td><a href="{{url('/dashboard/cousrse/add/'.$course_id)}}" class="btn  btn-outline-info  float-right">Add new material</a></td>
 
             </div>
                 <!-- /.card-header -->
@@ -33,7 +33,7 @@
                     <th>Name</th>
                     <th>Type</th>
                     <th>File</th>
-                    <th>Course_id</th>
+                    <th>Course_name</th>
                     <th>Created at</th>
                     <th>Updated at</th>
                     <th>Methods</th>
@@ -47,7 +47,7 @@
                     <td>{{$c->name}}</td>
                     <td>{{$c->type}}</td>
                     <td>{{$c->file_path}}</td>
-                    <td>{{$c->course_id}}</td>
+                    <td>{{$course_name}}</td>
                     <td>{{$c->created_at}}</td>
                     <td>{{$c->updated_at}}</td>
                     <td class="d-flex justify-content-around">

@@ -21,8 +21,8 @@
 </div>
 
 <div class="card">
-    @if ($errors->any())
 
+    @if ($errors->any())
     <div class="alert alert-info alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <h5><i class="icon fas fa-info"></i> Alert!</h5>
@@ -31,10 +31,10 @@
             <li>{{ $error }}</li>
             @endforeach
         </ul>
-      </div>
-      @endif
+    </div>
+    @endif
 
-    
+
     <div class="card-body register-card-body">
     <p class="login-box-msg">Register a new membership</p>
     <form action="{{url('postregister')}}" method="POST">

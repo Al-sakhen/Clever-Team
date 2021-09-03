@@ -19,6 +19,9 @@ class adminController extends Controller
 
         $data = years::all();
         $u = auth()->user();
+        $count = DB::table('years')->count();
+        // dd($count);
+
 
         return view('dashboard/index' , ['data'=>$data ,'title'=>'Dashboard' , 'user'=>$u]);
     }
@@ -28,6 +31,8 @@ class adminController extends Controller
         return view('dashboard.user.register', ['title'=>'Register']);
 
     }
+
+    
     public function postregister(Request $request){
 
         $values =$request->validate([
@@ -36,7 +41,7 @@ class adminController extends Controller
             'password'=>'required|min:6',
             're_password'=>'required_with:password|same:password'
         ]);
-        
+
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
