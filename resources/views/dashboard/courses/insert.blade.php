@@ -60,7 +60,7 @@
                         </div>
                         <div class="">
                             <input type="submit" value="Add Course" class="btn btn-success float-left">
-                            <a href="{{url('dashboard')}}" class="btn btn-secondary float-right">Show Courses</a>
+                            {{-- <a href="{{url('dashboard')}}" class="btn btn-secondary float-right">Show Courses</a> --}}
                         </div>
 
                     </div>
