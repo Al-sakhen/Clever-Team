@@ -19,11 +19,13 @@ class adminController extends Controller
 
         $data = years::all();
         $u = auth()->user();
-        $count = DB::table('years')->count();
+        $courses_count = DB::table('courses')->count();
+        $users_count = DB::table('users')->count();
+        $courses_details_count = DB::table('course_details')->count();
         // dd($count);
 
 
-        return view('dashboard/index' , ['data'=>$data ,'title'=>'Dashboard' , 'user'=>$u]);
+        return view('dashboard/index' , ['data'=>$data ,'title'=>'Dashboard' , 'user'=>$u , 'courses_details_count'=>$courses_details_count , 'users_count'=>$users_count , 'courses_count'=>$courses_count]);
     }
 
 
@@ -32,7 +34,7 @@ class adminController extends Controller
 
     }
 
-    
+
     public function postregister(Request $request){
 
         $values =$request->validate([
