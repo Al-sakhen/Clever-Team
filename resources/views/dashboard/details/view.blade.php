@@ -16,7 +16,7 @@
                 @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
             <div class="card-header">
-                <h3 class="card-title">Materials</h3>
+                <h3 class="card-title">{{$course_name}}</h3>
 
 
                 <td><a href="{{url('/dashboard/cousrse/add/'.$course_id)}}" class="btn  btn-outline-info  float-right">Add new material</a></td>
@@ -33,7 +33,6 @@
                     <th>Name</th>
                     <th>Type</th>
                     <th>File</th>
-                    <th>Course_name</th>
                     <th>Created at</th>
                     <th>Updated at</th>
                     <th>Methods</th>
@@ -47,7 +46,6 @@
                     <td>{{$c->name}}</td>
                     <td>{{$c->type}}</td>
                     <td>{{$c->file_path}}</td>
-                    <td>{{$course_name}}</td>
                     <td>{{$c->created_at}}</td>
                     <td>{{$c->updated_at}}</td>
                     <td class="d-flex justify-content-around">
