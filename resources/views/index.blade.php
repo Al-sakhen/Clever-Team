@@ -228,7 +228,7 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{asset('assets/img/testimonials/mohammad.jpg')}}" class="testimonial-img" alt="">
+                            <img src="{{asset('assets/img/testimonials/mohammad.png')}}" class="testimonial-img" alt="">
                             <h3>Mohammed Alqudah</h3>
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -239,7 +239,7 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{asset('assets/img/testimonials/abd.jpg')}}" class="testimonial-img" alt="">
+                            <img src="{{asset('assets/img/testimonials/abd.png')}}" class="testimonial-img" alt="">
                             <h3>Abdulkareem Aldeek</h3>
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
