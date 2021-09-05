@@ -35,6 +35,6 @@ var mixer = mixitup('.box-mix');
 
 </script>
 
-  </body>
+</body>
 
-  </html>
+</html>
