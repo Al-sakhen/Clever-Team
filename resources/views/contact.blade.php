@@ -23,7 +23,7 @@
                 <div class="info-box  mb-4">
                     <i class="bx bx-envelope"></i>
                     <h3>البريد الإلكتروني</h3>
-                    <p>abdulkareem_aldeek@outlook.com</p>
+                    <p>CleverTeam@outlook.com</p>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                 <div class="info-box  mb-4">
                     <i class="bx bx-phone-call"></i>
                     <h3>الهاتف الخلوي</h3>
-                    <p>+٩٦٢ ٧٩٠ ٢٦٨ ٣٤٥ </p>
+                    <p>059999999</p>
                 </div>
             </div>
 
