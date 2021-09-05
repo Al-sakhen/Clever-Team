@@ -17,15 +17,16 @@ class adminController extends Controller
 
     public function index(){
 
-        $data = years::all();
+
         $u = auth()->user();
-        $courses_count = DB::table('courses')->count();
+        $courses_count = Courses::count();
+
         $users_count = DB::table('users')->count();
         $courses_details_count = DB::table('course_details')->count();
         // dd($count);
 
 
-        return view('dashboard/index' , ['data'=>$data ,'title'=>'Dashboard' , 'user'=>$u , 'courses_details_count'=>$courses_details_count , 'users_count'=>$users_count , 'courses_count'=>$courses_count]);
+        return view('dashboard/index' , ['title'=>'Dashboard' , 'user'=>$u , 'courses_details_count'=>$courses_details_count , 'users_count'=>$users_count , 'courses_count'=>$courses_count]);
     }
 
 
