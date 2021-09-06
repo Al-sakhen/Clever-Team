@@ -30,7 +30,7 @@
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href="">بنك اسئلة</a></h4>
+                        <h4 class="title">بنك اسئلة</h4>
                         <p class="description">نوفر لك العديد من الاسئلة للسنوات السابقة وبعض من الاسئلة المتوقعة والتدريبية</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href="">نصائح دراسية</a></h4>
+                        <h4 class="title">نصائح دراسية</h4>
                         <p class="description">نصائح دراسية لكيفية دراسة المواد والحصول على اعلى علامة مقدمة من اكفئ الطلاب</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">ملخصات</a></h4>
+                        <h4 class="title">ملخصات</h4>
                         <p class="description">ملخصات دراسية لحل مشاكل قبل الامتحان والتسهيل لملمة المادة.</p>
                     </div>
                 </div>
