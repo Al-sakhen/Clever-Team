@@ -58,7 +58,7 @@
                     <li><a class="nav-link scrollto active" href="{{url('index')}}">الرئيسية</a></li>
                     <li><a class="nav-link scrollto" href="#about">من نحن؟</a></li>
                     <li><a class="nav-link scrollto" href=" {{url('index/#services')}}">الخدمات</a></li>
-                    <li><a class="nav-link scrollto" href="#team">الفريق</a></li>
+                    
 
                     <li><a class="nav-link scrollto" href="{{url('contact_us')}}">تواصل معنا</a></li>
                     <li class="dropdown"><a href="#"><span>المواد الدراسية</span> <i class="bi bi-chevron-down"></i></a>
