@@ -38,8 +38,8 @@
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title">نصائح دراسية</h4>
-                        <p class="description">نصائح دراسية لكيفية دراسة المواد والحصول على اعلى علامة مقدمة من اكفئ الطلاب</p>
+                        <h4 class="title">الكتب</h4>
+                        <p class="description">نوفر لك العديد من الكتب  المعتمدة </p>
                     </div>
                 </div>
 
