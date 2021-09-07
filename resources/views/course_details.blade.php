@@ -29,7 +29,7 @@
 
             <div class="box-menu dmne-tab-inner text-center">
                 <ul class="">
-                    <li class="mixitup-control-active nav-link active" data-filter=".materials"> المواد</li>
+                    <li class="mixitup-control-active nav-link " data-filter=".materials"> المواد</li>
                     <li  data-filter=".resources">ملخصات</li>
                     <li  data-filter=".testBank">اسئلة سنوات</li>
                     <li  data-filter=".books">الكتب</li>

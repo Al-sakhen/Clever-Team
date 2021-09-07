@@ -23,7 +23,7 @@
                 <div class="info-box  mb-4">
                     <i class="bx bx-envelope"></i>
                     <h3>البريد الإلكتروني</h3>
-                    <p>CleverTeam@outlook.com</p>
+                    <p>info@cleverteam.com</p>
                 </div>
             </div>
 
