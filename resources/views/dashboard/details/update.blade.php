@@ -41,6 +41,7 @@
                         </div>
                         <div class="form-group">
                             <label for="inputStatus">Type</label>
+                            <p>{{$d->type}}</p>
                             <select id="inputStatus" name="type"  class="form-control custom-select">
                                 <option>materials</option>
                                 <option>resources</option>
